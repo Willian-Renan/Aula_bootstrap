@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- definir o tipo de linguagem -->
+    <head>
+        <title>Minha Página</title>
+        <meta charset="utf-8"> <!-- Utilizado para navegador ler caracter especiais -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body> 
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img class="slogan" src="img/slogan.jpg" width="120" height="120">
+        </a>
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link barra" href="#quemsomos" style="color: white">Quem somos</a> <!-- nav-link para navegar até a section, #tudo junto --> <!-- neste caso, a solução encontrada para alterar a cor do texto na barra foi pelo html com o style -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#modelos" style="color: white">Modelos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#servicos" style="color: white">Serviços</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+    <section id="quemsomos">
+        <div class="container-fluid text-center margin quem-somos"> <!-- posição do texto e a margem -->
+            <h3>Quem somos</h3>
+            <img src="img/grupo.jpg" class="rounded-circle" width="300" height="300">
+            <h3>Somos um time comprometido com os resultados</h3>
+        </div>
+    </section>
+
+    <selection id="modelos">
+        <div class="container-fluid text-center margin modelos">
+            <h3 class="margin">Modelos</h3>
+            <div class="row">
+                <div class="col-lg-4"> <!-- dividir a página em 4 colunas -->
+                    <img src="img/vestido01.png" width="100%">
+                </div>
+                <div class="col-lg-4"> <!-- dividir a página em 4 colunas -->
+                    <img src="img/vestido02.png" width="100%">
+                </div>
+                <div class="col-lg-4"> <!-- dividir a página em 4 colunas -->
+                    <img src="img/vestido01.png" width="100%">
+                </div>               
+            </div>
+        </div>
+    </selection>
+
+    <section id="servicos">
+        <div class="container-fluid text-center margin servicos">
+            <h3 class="margin">Serviços</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Parceria com lojas de varejo</p>
+                        <img src="img/cel.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Parceria com lojas virtuais</p>
+                        <img src="img/pc.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-center bg-footer margin rodape">
+        <p>Desenvolvido por Willian Renan</p>
+    </footer>
+
+    </body>
+</html>
